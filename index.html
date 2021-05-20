@@ -10,14 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    /> -->
     <title>Landing Page v2</title>
   </head>
   <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="/images/logo.jpg" alt="" /></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About us</a></li>
@@ -25,7 +41,135 @@
             <li><a href="">Download App</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
+      <div class="text-box">
+        <h1>We are E-RECIEPTS!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nam
+          magnam. Voluptatum ducimus architecto aperiam.
+        </p>
+
+        <a href="" class="hero-btn">Click here to download now</a>
+      </div>
     </section>
+    <section></section>
+    <!-- 
+    ----------------About--------------- -->
+
+    <section class="about">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, beatae!
+      </p>
+      <br />
+      <h2>Our Team</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa.</p>
+      <div class="row"></div>
+    </section>
+
+    <!-- ---------services--------- -->
+    <section class="service">
+      <h1>Our Services</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, beatae!
+      </p>
+
+      <div class="row">
+        <div class="service-col">
+          <h3>Free Version</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="service-col">
+          <h3>Pro Version</h3>
+          <i class="fa fa-usd"></i>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+            dignissimos. Nostrum, quia excepturi?
+          </p>
+        </div>
+        <div class="service-col">
+          <h3>Premium Version</h3>
+          <i class="fa fa-usd"></i>
+          <i class="fa fa-usd"></i>
+          <i class="fa fa-usd"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            commodi doloribus ducimus sunt deleniti minus ut, eligendi incidunt
+            eius officia?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -------features-------- -->
+    <section class="feature">
+      <h1>Organize your E-RECIEPTS however you please!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        quisquam.
+      </p>
+      <div class="row">
+        <div class="feature-col">
+          <img src="/images/charts.jpg" alt="chart" />
+          <div class="layer">
+            <h2>Use Charts to keep track!</h2>
+          </div>
+        </div>
+        <div class="feature-col">
+          <img src="/images/category.jpg" alt="chart" />
+          <div class="layer">
+            <h2>Filter Using Categories</h2>
+          </div>
+        </div>
+        <div class="feature-col">
+          <img src="/images/pay.jpg" alt="chart" />
+          <div class="layer">
+            <h2>Use NFC to download your receipt</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------apps------------- -->
+    <section class="application">
+      <h1>We are available on both Google play store and apple store</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="row">
+        <div class="app-col">
+          <img src="/images/android.jpg" alt="android" />
+          <h3>Android</h3>
+        </div>
+        <div class="app-col">
+          <img src="/images/iphone.jpg" alt="android" />
+          <h3>Iphone</h3>
+        </div>
+      </div>
+    </section>
+    <!-- ------subscribe-------- -->
+    <section class="contact">
+      <h1>Contact us to find more!</h1>
+      <h1><a href="" class="hero-btn">Contact us!</a></h1>
+    </section>
+    <!-- ----------Footer------------ -->
+    <section class="footer">
+      <h4>Reach Us</h4>
+      <p>Reach us through various social media platforms!</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+    <!-- ------javascript------toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
